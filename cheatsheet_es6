@@ -1,0 +1,74 @@
+const user ="Kumar";
+console.log(user);
+
+function greeter(person) {
+    let user = "Venkat";
+    return "Hello, " + user;
+}
+// Template Strings
+function addToCart(name,price,email){
+    console.log(`Hello ${name} displaying price of ${price} ${email}`)
+    return "Jelly";
+}
+
+// let  declaring the variables under method scope
+
+let firstName ="Venkat";
+
+//const declaring final variable/const
+
+const parentName="VT";
+
+var animal  =["A","B","C"];
+
+var friends  =["D","E","F"];
+
+// Dot Operator
+var combined =[...animal,...friends];
+
+console.log(combined);
+
+console.log(addToCart("Venkat",10,"venkate@"));
+console.log(greeter(user));
+
+// Map Function
+
+var ds =new Map();
+ds.set(1,{desc:'one',expand:true});
+ds.set(2,{desc:'two',expand:true});
+console.log(ds.get(1));
+
+// Sets Function
+var sets =new Set();
+sets.add("Hi");
+sets.add("He");
+sets.add("He");
+console.log(sets);
+console.log("Size "+sets.size);
+sets.delete("He")
+console.log("Size "+sets.size);
+
+// for each loop
+
+for(l of 'ABCD'){
+console.log(l);}
+
+for (set of sets){
+    console.log(set);
+}
+
+// Function default parameters
+
+function add(x=2,y=0){
+    console.log(x+y);
+}
+
+add(3);
+
+// Repeat function
+function sayHello(times){
+    console.log('Hi'.repeat(times));
+}
+
+sayHello(5);
+
